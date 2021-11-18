@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.footer{
+    padding: 1.5rem;
+    margin-top: 95px;
+    text-align: center;
+}
+.f-link{
+    text-decoration: none;
+    color: white;
+    
+}

@@ -2,7 +2,7 @@ import React from 'react';
 import { Card, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
-const Apartment = (props) => {
+const ExploreApartment = (props) => {
     const { _id, title, description, price, img } = props.apartment;
     return (
         <div>
@@ -23,4 +23,4 @@ const Apartment = (props) => {
     );
 };
 
-export default Apartment;
+export default ExploreApartment;

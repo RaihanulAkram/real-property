@@ -23,12 +23,15 @@ const useFirebase = () => {
                 setAuthError('');
                 const newUser = { displayName: name, email }
                 setUser(newUser);
+                hanldeUserInfoRegister(userCredential.user.email, userCredential.user.name);
                 //send name to firebase
                 updateProfile(auth.currentUser, {
                     displayName: name
-                }).then(() => {
-                }).catch((error) => {
-                });
+                })
+                    .then(() => {
+                    })
+                    .catch((error) => {
+                    });
                 history.replace("/");
             })
             .catch((error) => {
@@ -58,6 +61,7 @@ const useFirebase = () => {
         signInWithPopup(auth, googleProvider)
             .then((result) => {
                 const user = result.user;
+                console.log(user);
                 const destination = location?.state?.from || '/';
                 history.replace(destination);
                 setAuthError('');
@@ -78,7 +82,7 @@ const useFirebase = () => {
             setIsLoading(false);
         });
         return () => unsubscribed;
-    }, [])
+    }, [auth])
 
 
     const logout = () => {
@@ -90,6 +94,16 @@ const useFirebase = () => {
         })
             .finally(() => setIsLoading(false));
     }
+
+    const hanldeUserInfoRegister = (email, name) => {
+        fetch("http://localhost:5050/addUserInfo", {
+            method: "POST",
+            headers: { "content-type": "application/json" },
+            body: JSON.stringify({ email, name }),
+        })
+            .then((res) => res.json())
+            .then((result) => console.log(result));
+    };
 
     return {
         user,

@@ -9,7 +9,7 @@ const Navigation = () => {
 
     return (
         <div>
-            <Navbar bg="primary" expand="lg">
+            <Navbar className="navbar navbar-expand-lg" bg="primary" expand="lg">
                 <Container fluid>
                     <Navbar.Brand href="#" className="text-white">Real Property</Navbar.Brand>
                     <Navbar.Toggle aria-controls="navbarScroll" />
@@ -20,16 +20,22 @@ const Navigation = () => {
                             navbarScroll
                         >
                             <NavLink className="link text-white px-2 text-center" to="/home">Home</NavLink>
-                            <NavLink className="link text-white px-2 text-center" to="/about">About</NavLink>
-                            <NavLink className="link text-white px-2 text-center" to="/explore">Explore</NavLink>
-                            <NavLink className="link text-white px-2 text-center" to="/addApartments">AddApartments</NavLink>
-                            {
-                                user?.email ?
-                                    <NavLink onClick={logout} className="link text-white px-2 text-center" to="/login">Logout</NavLink>
-                                    :
-                                    <NavLink className="link text-white px-2 text-center" to="/login">Login</NavLink>
+                            <NavLink className="link text-white px-2 text-center" to="/explore">Explore Apartments</NavLink>
+                            {user?.email && <NavLink className="link text-white px-2 text-center" to="/myorders">My Orders</NavLink>}
+                            {user?.email && <NavLink className="link text-white px-2 text-center" to="/dashboard">Dashboard</NavLink>}
+
+                            {!user?.email &&
+                                <NavLink className="link text-white px-2 text-center" to="/login">Login</NavLink>
                             }
-                            <NavLink className="link text-white px-2 text-center" to="/register">Register</NavLink>
+
+                            {!user?.email && <NavLink className="link text-white px-2 text-center" to="/register">Register</NavLink>}
+                            {
+                                <span className="text-white px-2 fw-bold text-center">{user.displayName}</span>
+                            }
+                            {
+                                user?.email &&
+                                <NavLink onClick={logout} className="link text-white px-2 text-center" to="/login">Logout</NavLink>
+                            }
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

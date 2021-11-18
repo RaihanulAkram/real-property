@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+// import { ToastContainer, toast } from 'react-toastify';
+// import 'react-toastify/dist/ReactToastify.css';
 import { Card, Col } from 'react-bootstrap';
 import { useForm } from 'react-hook-form';
 import { useParams } from 'react-router';
@@ -13,12 +15,15 @@ const PlaceOrder = () => {
         register,
         handleSubmit,
         reset,
-        watch,
         formState: { errors },
     } = useForm();
 
-
-
+    // const notify = () => {
+    //     // toast.success("Order Successfully Placed!", {
+    //     //     position: toast.POSITION.TOP_CENTER,
+    //     // })
+    //     alert("Order Placed Successfully")
+    // };
 
     const onSubmit = (data) => {
         data.email = user?.email;
@@ -32,6 +37,7 @@ const PlaceOrder = () => {
             .then((result) => console.log(result));
         console.log(data);
         reset();
+
     };
 
 
@@ -39,7 +45,7 @@ const PlaceOrder = () => {
         fetch(`http://localhost:5050/singleApartments/${id}`)
             .then((res) => res.json())
             .then((data) => setApartments(data));
-    }, []);
+    }, [id]);
 
     return (
         <div className='container text-center col-lg-4 my-5'>
@@ -136,11 +142,14 @@ const PlaceOrder = () => {
 
                     {errors.exampleRequired && <span>This field is required</span>}
 
-                    <input
-                        type="submit"
-                        value="Order now"
-                        className="btn btn-primary w-50"
-                    />
+                    <div>
+                        <input
+                            type="submit"
+                            value="Order now"
+                            className="btn btn-primary w-50"
+                        />
+                        {/* <ToastContainer /> */}
+                    </div>
                 </form>
             </div>
         </div >

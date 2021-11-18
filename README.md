@@ -1,70 +1,43 @@
-# Getting Started with Create React App
+# Real Property
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Code Link: 
 
-## Available Scripts
+Live Site Link: 
 
-In the project directory, you can run:
+Server Site Link:
 
-### `yarn start`
+## Want to buy a property please contact with us
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+If you want to buy real property then contact with us through our website. Go to the explore apartment link (given in the nav bar) and explore our collection. If you like any then place a order don't hesitate.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Our vision
 
-### `yarn test`
+Our vission is to provide apartment at a affordable price.
+.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### About us
 
-### `yarn build`
+Welcome to Real Property, the world's largest professional real estate agency based in New York. We provide our awesome services in more than 200 countries and territories worldwide.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Our Mission
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Our Mission is to make people feel at home in luxarious Apartment.
 
-### `yarn eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Our core value
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Our core value is to make people happy in their day to day life.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+** Our History
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Real Property began was officially launched on May 5, 2003 in New York.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Today, Real Property leads a diversified business with revenues from membership subscriptions, advertising sales and recruitment solutions under the leadership of John Doe.
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## How to use our site.
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+First you have to login to our site. Then explore our apartment collection. If you like any property from real property then as soon as possible contact with us to konw the availablity of this apartment. After confirmation place order as soon as possible before someone buy.

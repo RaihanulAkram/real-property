@@ -1,3 +1,9 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .link{
     text-decoration: none;
 }
@@ -30,3 +36,26 @@
 .error{
     color: red;
 }
+
+.input-field {
+    border: none;
+    padding: 10px;
+    width: 50%;
+    border-bottom: 1px solid darkgray;
+    margin-top: 10px;
+    outline: none;
+  }
+  .input-field:hover {
+    border-bottom: 1px solid rgb(13, 113, 228);
+  }
+
+  .dashboard {
+    height: 100vh;
+    width: 100%;
+    color: black;
+    cursor: pointer;
+  }
+  .dashboard-menu {
+    text-decoration: none;
+    list-style: none;
+  }
