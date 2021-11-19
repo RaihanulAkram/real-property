@@ -6,7 +6,7 @@ const ExploreApartments = () => {
     const [apartments, setApartments] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5050/allApartments')
+        fetch('https://desolate-thicket-65781.herokuapp.com//allApartments')
             .then(res => res.json())
             .then(data => setApartments(data))
     }, [])

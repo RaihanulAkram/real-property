@@ -96,7 +96,7 @@ const useFirebase = () => {
     }
 
     const hanldeUserInfoRegister = (email, name) => {
-        fetch("http://localhost:5050/addUserInfo", {
+        fetch("https://desolate-thicket-65781.herokuapp.com//addUserInfo", {
             method: "POST",
             headers: { "content-type": "application/json" },
             body: JSON.stringify({ email, name }),

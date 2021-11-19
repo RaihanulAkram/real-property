@@ -8,7 +8,7 @@ const Apartments = () => {
     const apartmentsSlice = apartments.slice(0, 6);
 
     useEffect(() => {
-        fetch('http://localhost:5050/allApartments')
+        fetch('https://desolate-thicket-65781.herokuapp.com//allApartments')
             .then(res => res.json())
             .then(data => setApartments(data))
     }, [])

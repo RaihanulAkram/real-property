@@ -8,7 +8,7 @@ const AddApartments = () => {
 
     const onSubmit = data => {
         console.log(data)
-        fetch('http://localhost:5050/addApartments', {
+        fetch('https://desolate-thicket-65781.herokuapp.com//addApartments', {
             method: "POST",
             headers: { "content-type": "application/json" },
             body: JSON.stringify(data),

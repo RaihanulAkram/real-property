@@ -11,7 +11,7 @@ const Navigation = () => {
         <div>
             <Navbar className="navbar navbar-expand-lg" bg="primary" expand="lg">
                 <Container fluid>
-                    <Navbar.Brand href="#" className="text-white">Real Property</Navbar.Brand>
+                    <Navbar.Brand className="text-white">Real Property</Navbar.Brand>
                     <Navbar.Toggle aria-controls="navbarScroll" />
                     <Navbar.Collapse id="navbarScroll">
                         <Nav

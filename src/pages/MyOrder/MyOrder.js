@@ -9,7 +9,7 @@ const MyOrder = () => {
     // const [status, setStatus] = useState("");
     const [orderId, setOrderId] = useState("");
     useEffect(() => {
-        fetch("http://localhost:5050/allOrders")
+        fetch("https://desolate-thicket-65781.herokuapp.com//allOrders")
             .then((res) => res.json())
             .then((data) => setOrders(data));
     }, []);
@@ -21,7 +21,7 @@ const MyOrder = () => {
     };
 
     const handleDelete = (id) => {
-        fetch(`http://localhost:5050/deleteOrder/${id}`, {
+        fetch(`https://desolate-thicket-65781.herokuapp.com//deleteOrder/${id}`, {
             method: "DELETE",
         })
             .then((res) => res.json())
@@ -34,17 +34,6 @@ const MyOrder = () => {
             });
         console.log(id);
     };
-
-    // const onSubmit = (data) => {
-    //     console.log(data, orderId);
-    //     fetch(`http://localhost:5050/statusUpdate/${orderId}`, {
-    //         method: "PUT",
-    //         headers: { "content-type": "application/json" },
-    //         body: JSON.stringify(data),
-    //     })
-    //         .then((res) => res.json())
-    //         .then((result) => console.log(result));
-    // };
 
     return (
         <div className="container">

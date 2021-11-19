@@ -28,7 +28,7 @@ const PlaceOrder = () => {
     const onSubmit = (data) => {
         data.email = user?.email;
         data.status = "pending";
-        fetch("http://localhost:5050/addOrders", {
+        fetch("https://desolate-thicket-65781.herokuapp.com//addOrders", {
             method: "POST",
             headers: { "content-type": "application/json" },
             body: JSON.stringify(data),
@@ -42,7 +42,7 @@ const PlaceOrder = () => {
 
 
     useEffect(() => {
-        fetch(`http://localhost:5050/singleApartments/${id}`)
+        fetch(`https://desolate-thicket-65781.herokuapp.com//singleApartments/${id}`)
             .then((res) => res.json())
             .then((data) => setApartments(data));
     }, [id]);
