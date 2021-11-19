@@ -1,8 +1,8 @@
 # Real Property
 
-Code Link: 
+Client Site Link: https://github.com/programming-hero-web-course-4/niche-website-client-side-RaihanulAkram
 
-Server Site Link:
+Server Site Link: https://github.com/programming-hero-web-course-4/niche-website-server-side-RaihanulAkram
 
 Live Site Link: https://realpropertybd.firebaseapp.com
 
