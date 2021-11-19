@@ -4,7 +4,7 @@ Code Link:
 
 Server Site Link:
 
-Live Site Link: https://realpropertybd.web.app
+Live Site Link: https://realpropertybd.firebaseapp.com
 
 ## Want to buy a property please contact with us
 
