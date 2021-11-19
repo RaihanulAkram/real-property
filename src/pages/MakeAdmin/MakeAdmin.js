@@ -4,7 +4,7 @@ const MakeAdmin = () => {
     const { register, handleSubmit, watch, errors } = useForm();
 
     const onSubmit = (data) => {
-        fetch("https://desolate-thicket-65781.herokuapp.com//makeAdmin", {
+        fetch("https://desolate-thicket-65781.herokuapp.com/makeAdmin", {
             method: "PUT",
             headers: { "content-type": "application/json" },
             body: JSON.stringify(data),

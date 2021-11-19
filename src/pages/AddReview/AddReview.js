@@ -9,7 +9,7 @@ const AddReview = () => {
 
     const onSubmit = (data) => {
         console.log(data);
-        fetch("https://desolate-thicket-65781.herokuapp.com//addReview", {
+        fetch("https://desolate-thicket-65781.herokuapp.com/addReview", {
             method: "POST",
             headers: { "content-type": "application/json" },
             body: JSON.stringify(data),

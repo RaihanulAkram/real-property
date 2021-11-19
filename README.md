@@ -2,9 +2,9 @@
 
 Code Link: 
 
-Live Site Link: https://realpropertybd.web.app
-
 Server Site Link:
+
+Live Site Link: https://realpropertybd.web.app
 
 ## Want to buy a property please contact with us
 

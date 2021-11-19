@@ -11,7 +11,7 @@ const MangeOrder = () => {
 
     console.log(status);
     useEffect(() => {
-        fetch("https://desolate-thicket-65781.herokuapp.com//allOrders")
+        fetch("https://desolate-thicket-65781.herokuapp.com/allOrders")
             .then((res) => res.json())
             .then((data) => setOrders(data));
     }, []);
@@ -24,7 +24,7 @@ const MangeOrder = () => {
 
     const onSubmit = (data) => {
         console.log(data, orderId);
-        fetch(`https://desolate-thicket-65781.herokuapp.com//statusUpdate/${orderId}`, {
+        fetch(`https://desolate-thicket-65781.herokuapp.com/statusUpdate/${orderId}`, {
             method: "PUT",
             headers: { "content-type": "application/json" },
             body: JSON.stringify(data),

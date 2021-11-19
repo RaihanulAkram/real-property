@@ -9,7 +9,7 @@ const MyOrder = () => {
     // const [status, setStatus] = useState("");
     const [orderId, setOrderId] = useState("");
     useEffect(() => {
-        fetch("https://desolate-thicket-65781.herokuapp.com//allOrders")
+        fetch("https://desolate-thicket-65781.herokuapp.com/allOrders")
             .then((res) => res.json())
             .then((data) => setOrders(data));
     }, []);
@@ -21,7 +21,7 @@ const MyOrder = () => {
     };
 
     const handleDelete = (id) => {
-        fetch(`https://desolate-thicket-65781.herokuapp.com//deleteOrder/${id}`, {
+        fetch(`https://desolate-thicket-65781.herokuapp.com/deleteOrder/${id}`, {
             method: "DELETE",
         })
             .then((res) => res.json())

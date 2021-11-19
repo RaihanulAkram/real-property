@@ -7,13 +7,13 @@ const MyBookings = () => {
     const [orders, setOrders] = useState([]);
     console.log(orders);
     useEffect(() => {
-        fetch(`https://desolate-thicket-65781.herokuapp.com//myOrders/${user?.email}`)
+        fetch(`https://desolate-thicket-65781.herokuapp.com/myOrders/${user?.email}`)
             .then((res) => res.json())
             .then((data) => setOrders(data));
     }, [user?.email]);
 
     const handleDelete = (id) => {
-        fetch(`https://desolate-thicket-65781.herokuapp.com//deleteOrder/${id}`, {
+        fetch(`https://desolate-thicket-65781.herokuapp.com/deleteOrder/${id}`, {
             method: "DELETE",
         })
             .then((res) => res.json())
